@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/css/uikit.min.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<script>
+
+  
+
+	$(document).ready(function(){
+	$(".webshow").click(function(){
+		$(".web").addClass("show");
+		$(".java").addClass("hidethis");
+		$(".Csharp").addClass("hidethis");
+		$(".Arduino").addClass("hidethis");		$(".java").removeClass("show");
+		$(".Csharp").removeClass("show");
+		$(".Arduino").removeClass("show");
+		$(".item2").removeClass("selected");
+		$(".item3").removeClass("selected");
+		$(".item4").removeClass("selected");
+		$(".item1").addClass("selected");
+
+	});
+});
+
+
+	$(document).ready(function(){
+	$(".javashow").click(function(){
+		$(".web").addClass("hidethis");
+		$(".java").addClass("show");
+		$(".Csharp").addClass("hidethis");
+		$(".Arduino").addClass("hidethis");
+		$(".Csharp").removeClass("show");
+		$(".Arduino").removeClass("show");
+		$(".item1").removeClass("selected");
+		$(".item3").removeClass("selected");
+		$(".item4").removeClass("selected");
+		$(".web").removeClass("show");
+		$(".item2").addClass("selected");
+	});
+});
+
+	$(document).ready(function(){
+	$(".csharpshow").click(function(){
+		$(".web").addClass("hidethis");
+		$(".java").addClass("hidethis");
+		$(".Csharp").addClass("show");
+		$(".Arduino").addClass("hidethis");
+		$(".java").removeClass("show");
+		$(".web").removeClass("show");				$(".Arduino").removeClass("show");
+		$(".item1").removeClass("selected");
+		$(".item2").removeClass("selected");
+		$(".item4").removeClass("selected");
+		$(".item3").addClass("selected");
+	});
+});
+
+
+	$(document).ready(function(){
+	$(".Ardunoshow").click(function(){
+		$(".web").addClass("hidethis");
+		$(".java").addClass("hidethis");
+		$(".Csharp").addClass("hidethis");
+		$(".Arduino").addClass("show");
+		$(".java").removeClass("show");
+		$(".web").removeClass("show");
+		$(".Csharp").removeClass("show");
+		$(".item1").removeClass("selected");
+		$(".item3").removeClass("selected");
+		$(".item2").removeClass("selected");
+		$(".item4").addClass("selected");
+	});
+});
+
+
+
+$(window).ready(function(){ 
+					  $('.html').animate({width:'90%'},2000);
+					  $('.css').animate({width:'80%'},2000);
+					  $('.js').animate({width:'70%'},2000);
+					  $('.php').animate({width:'65%'},2000);
+					  $('.ajax').animate({width:'45%'},2000);
+
+		$('.wordpress').animate({width:'60%'},3000);
+
+		$('.java1').animate({width:'80%'},3000);
+
+		$('.csharp').animate({width:'70%'},3000);
+
+		$('.net').animate({width:'60%'},3000);
+
+		$('.photoshop').animate({width:'80%'},3000);
+
+					  }
+);
+
+$(window).ready(function(){ 
+					  $('.html').animate({width:'90%'},2000);
+					  $('.css').animate({width:'80%'},2000);
+					  $('.js').animate({width:'70%'},2000);
+					  $('.php').animate({width:'65%'},2000);
+					  $('.ajax').animate({width:'45%'},2000);
+
+		$('.wordpress').animate({width:'60%'},3000);
+
+		$('.java1').animate({width:'80%'},3000);
+
+		$('.csharp').animate({width:'70%'},3000);
+
+		$('.net').animate({width:'60%'},3000);
+
+		$('.photoshop').animate({width:'80%'},3000);
+
+					  }
+);
+
+
+</script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+#myNavbar{
+  z-index: 1000;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <img src="images/avatar_smoke.jpg" style="width:100%">
+  <a href="../" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="../about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="../projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="../service" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xlarge"></i>
+    <p>Services</p>
+  </a>
+  <a href="../contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="../" class="w3-bar-item w3-button" style="width:20% !important;    font-size: 9px; ">HOME</a>
+      <a href="../about" class="w3-bar-item w3-button" style="width:20% !important;    font-size: 9px;">ABOUT</a>
+      <a href="../projects" class="w3-bar-item w3-button" style="width:20% !important;    font-size: 9px;">PHOTOS</a>
+      <a href="../service" class="w3-bar-item w3-button" style="width:20% !important;    font-size: 9px;">CONTACT</a>
+      <a href="../contact" class="w3-bar-item w3-button" style="width:20% !important;    font-size: 9px;">CONTACT</a>
+    </div>
+  </div>
